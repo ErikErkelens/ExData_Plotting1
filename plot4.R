@@ -14,7 +14,7 @@ hh[hh=="?"]<-NA
 #Create the plot
 par(mfrow=c(2,2))
 with(hh,{
-	plot(TimeStamp, Global_active_power, type="l", xlab="", ylab="Global Active Power (kilowatts)")
+	plot(TimeStamp, Global_active_power, type="l", xlab="", ylab="Global Active Power")
 
 	plot(TimeStamp, Voltage, type="l", xlab="datetime")
 
