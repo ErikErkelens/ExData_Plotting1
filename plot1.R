@@ -8,7 +8,7 @@ hh=read.csv.sql("household_power_consumption.txt",
 #not yet needed here...
 #hh<-transform(hh,TimeStamp=as.POSIXlt(paste(Date,Time), format="%d/%m/%Y %H:%M:%S"));
 
-#Question mark is the symbol for NA; read.csv doesn't support na.strings?
+#Question mark is the symbol for NA; read.csv.sql doesn't support na.strings?
 hh[hh=="?"]<-NA
 
 #Create the plot
